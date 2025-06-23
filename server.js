@@ -7,7 +7,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors({
-  origin: "http://localhost:5173"  //This  allows requests from the frontend running on this URL.Otherwise it will show CORS error.
+  origin: "https://manishbcportfolio.vercel.app/"  //This  allows requests from the frontend running on this URL.Otherwise it will show CORS error.
 }));
 app.use(express.json()); // This middleware parses incoming JSON requests and makes the data available in req.body
 
